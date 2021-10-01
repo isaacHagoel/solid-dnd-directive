@@ -1,0 +1,54 @@
+{
+  "name": "solid-dnd-directive",
+  "version": "0.1.0",
+  "description": "An awesome drag and drop container for solid js, a port of the battle tested, production ready svelte-dnd-action",
+  "type": "module",
+  "module": "dist/index.mjs",
+  "main": "dist/index.js",
+  "keywords": [
+    "solid",
+    "solid js",
+    "drag and drop",
+    "sortable",
+    "dnd",
+    "draggable",
+    "accessible",
+    "touch"
+  ],
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "solid": "./src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacHagoel/solid-dnd-directive.git"
+  },
+  "author": "Isaac Hagoel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/isaacHagoel/solid-dnd-directive/issues"
+  },
+  "homepage": "https://github.com/isaacHagoel/solid-dnd-directive#readme",
+  "peerDependencies": {
+    "solid-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@rollup/plugin-node-resolve": "^13.0.5",
+    "babel-preset-solid": "^1.1.5",
+    "rollup": "^2.57.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "solid-js": "^1.1.1"
+  },
+  "dependencies": {
+    "svelte-dnd-action": "0.9.11"
+  }
+}
