@@ -26,6 +26,7 @@
   "scripts": {
     "build": "rollup -c"
   },
+  "prepublishOnly": "yarn build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/isaacHagoel/solid-dnd-directive.git"
