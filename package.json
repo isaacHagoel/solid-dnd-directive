@@ -1,6 +1,6 @@
 {
   "name": "solid-dnd-directive",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An awesome drag and drop container for solid js, a port of the battle tested, production ready svelte-dnd-action",
   "type": "module",
   "module": "dist/index.mjs",
@@ -16,11 +16,13 @@
     "touch"
   ],
   "files": [
+    "src",
     "dist"
   ],
   "exports": {
     ".": {
-      "solid": "./src/index.js"
+      "solid": "./src/index.js",
+      "default": "./dist/index.js"
     }
   },
   "scripts": {
