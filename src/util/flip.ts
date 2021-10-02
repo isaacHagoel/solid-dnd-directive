@@ -1,14 +1,18 @@
-export function createFlipper(node, durationMS) {
+export type Flipper = {
+    read: (ids: string[]) => void;
+    flip: (ids: string[]) => void;
+}
+export function createFlipper(node: HTMLElement, durationMS: number): Flipper {
     let idToRect = new Map();
     let idToAnim = new Map();
 
-    function read(ids) {
+    function read(ids: string[]) {
         idToRect = new Map();
         Array.from(node.children).forEach((child, index) => {
             idToRect.set(ids[index], child.getBoundingClientRect());
         });
     }
-    function flip(ids) {
+    function flip(ids: string[]) {
         Array.from(node.children).forEach((child, index) => {
             const id = ids[index];
             const currentRect = child.getBoundingClientRect();

@@ -1,10 +1,11 @@
 {
   "name": "solid-dnd-directive",
-  "version": "0.1.2",
+  "version": "0.1.14",
   "description": "An awesome drag and drop container for solid js, a port of the battle tested, production ready svelte-dnd-action",
   "type": "module",
-  "module": "dist/index.mjs",
-  "main": "dist/index.js",
+  "main": "dist/esm/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
   "keywords": [
     "solid",
     "solid js",
@@ -16,19 +17,18 @@
     "touch"
   ],
   "files": [
-    "src",
     "dist"
   ],
   "exports": {
     ".": {
-      "solid": "./src/index.js",
-      "default": "./dist/index.js"
+      "solid": "./dist/source/index.js",
+      "default": "./dist/esm/index.js"
     }
   },
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "prepublishOnly": "yarn build"
   },
-  "prepublishOnly": "yarn build",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/isaacHagoel/solid-dnd-directive.git"
@@ -44,14 +44,22 @@
   },
   "devDependencies": {
     "@babel/core": "^7.15.5",
-    "@babel/preset-env": "^7.15.6",
-    "@rollup/plugin-node-resolve": "^13.0.5",
-    "babel-preset-solid": "^1.1.5",
-    "rollup": "^2.57.0",
-    "rollup-plugin-babel": "^4.4.0",
-    "solid-js": "^1.1.1"
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/eslint": "^7.28.0",
+    "@typescript-eslint/eslint-plugin": "^4.32.0",
+    "@typescript-eslint/parser": "^4.32.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.4.1",
+    "rollup": "^2.58.0",
+    "rollup-preset-solid": "^1.0.1",
+    "solid-js": "^1.1.0",
+    "typescript": "^4.4.3"
   },
   "dependencies": {
     "svelte-dnd-action": "0.9.11"
+  },
+  "engines": {
+    "node": ">=14.16.0",
+    "npm" : ">=6.14.8"
   }
 }
