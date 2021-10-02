@@ -1,3 +1,5 @@
+### THIS IS EXPERIMENTAL ATM, WHEN IT IS READY FOR OTHERS TO USE I WILL REMOVE THIS LINE
+
 # SOLID DND DIRECTIVE
 This is a **feature-complete** implementation of **drag and drop** for [Solid JS](https://www.solidjs.com/) using a custom directive. <br/> 
 It supports almost every imaginable drag and drop use-case, any input device and is fully accessible. <br />
