@@ -70,5 +70,8 @@ function App() {
 
 export default App;
 ```
+### Examples
+- [Most basic (the code snippet above), single zone](https://codesandbox.io/s/dnd-basic-example-exonk?file=/src/App.jsx)
+- [Board (Trello like) draggable columns and auto scroll](https://codesandbox.io/s/dnd-board-gs2nd?file=/src/App.jsx)
 
-### Full documentation of the options and many examples with links coming soon
+### Full documentation of the options, and many examples with links coming soon

@@ -19,7 +19,7 @@ export function overrideItemIdKeyNameBeforeInitialisingDndZones(newId:string) {
 }
 
 type SolidOptions = {
-    items: () => Array<Record<string, any>>; /**a getter the list of items (SIGNAL) that was used to generate the children of the given node (the list used in the #each block*/
+    items: () => Array<Record<string, any>>; /**a getter the list of items (SIGNAL or a getter to STORE value) that was used to generate the children of the given node (the list used in the `<For>` block*/
     type?: string | (() => string); /**the type of the dnd zone. children dragged from here can only be dropped in other zones of the same type, default to a base type*/
     flipDurationMs?: number | (() => number); /**the duration of the flip animation. zero means no animation*/
     dragDisabled?: boolean | (() => boolean);
