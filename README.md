@@ -165,7 +165,7 @@ In such cases you can import and call `overrideItemIdKeyNameBeforeInitialisingDn
 For example:
 
 ```javascript
-import {overrideItemIdKeyNameBeforeInitialisingDndZones} from "svelte-dnd-action";
+import {overrideItemIdKeyNameBeforeInitialisingDndZones} from "solid-dnd-directive";
 overrideItemIdKeyNameBeforeInitialisingDndZones("_id");
 ```
 
@@ -176,7 +176,7 @@ It applies globally (as in, all of your items everywhere are expected to have a 
 By default, no debug output will be logged to the console. If you want to see internal debug messages, you can enable the debug output like this:
 
 ```javascript
-import {setDebugMode} from "svelte-dnd-action";
+import {setDebugMode} from "solid-dnd-directive";
 setDebugMode(true);
 ```
 
