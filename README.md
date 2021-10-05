@@ -4,13 +4,14 @@ It supports almost every imaginable drag and drop use-case, any input device and
 It requires very minimal configuration, while offering a rich set of primitives that allow overriding basically any of its default behaviours (using the handler functions). <br /><br />
 The reason it is so **feature rich**, **robust** and **production ready** is that under the hood it utilises the most popular drag and drop library for svelte (which actually has no dependency on svelte whatsoever): [svelte-dnd-action](https://github.com/isaacHagoel/svelte-dnd-action)
 ![solid-dnd-directive-gif](https://user-images.githubusercontent.com/20507787/135997141-d21fa9bb-1f1d-4c7e-9263-bf6bc5bd4a6e.gif)
+<br/>
 [Play with this example here](https://codesandbox.io/s/dnd-board-gs2nd?file=/src/App.jsx)
 
 ### Current Status
 
 While the core of this library is **used in commercial svelte apps in production** and has a very stable API, the thin adapter that makes it Solid friendly is very new and **still experimental**.</br>
 It introduces its own, very minimal, implementation of flip animations, which still needs to be tested under fire. <br/>
-I will add examples and improvements to this repo. **The greater the interest from the Solid community - the faster I will do it** :smile
+I will add examples and improvements to this repo. **The greater the interest from the Solid community - the faster I will do it** :smile:
 
 ### Features
 
