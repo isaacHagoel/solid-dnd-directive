@@ -69,6 +69,7 @@ function App() {
 
 export default App;
 ```
+[Play with this example here](https://codesandbox.io/s/dnd-basic-example-exonk?file=/src/App.jsx)
 ##### Input:
 
 Except for `items`, **all the other options can be either a value (won't be reactive), or a function that returns a value (Signal, or function to a Store, will update reactively)**
